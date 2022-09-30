@@ -29,17 +29,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 main {
-  width: 70%;
-  height: 60%;
+  width: min(1300px, 90%);
+  height: 65%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-
   grid-template-areas: "left . . ." "left . . .";
   gap: 30px;
+}
+
+#header {
+  color: var(--pale-blue);
+  text-align: center;
+  font-size: 2rem;
+  width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -49,9 +56,9 @@ main {
 
   main {
     width: 90%;
-    height: 100%;
-    grid-template-areas: "left" ".";
-    grid-template-columns: repeat(1, auto);
-    grid-auto-rows: 250px;
+    height: 90%;
+    grid-template-areas: "left" "." "." "." "." "." ".";
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, 200px);
   }
 }

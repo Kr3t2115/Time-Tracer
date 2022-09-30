@@ -42,31 +42,49 @@
   font-size: 3rem;
 }
 .nav {
-  width: 100%;
+  width: 90%;
   height: 30%;
-  clear: both;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  margin-left: 30px;
 }
 
-.nav ul {
-  list-style-type: none;
-}
-.nav ul li {
+.nav h4 {
   margin-top: 30px;
   color: var(--pale-blue);
+  font-weight: 400;
+  font-size: 1rem;
 }
 
-.nav ul li:hover {
+.nav h4:hover {
   cursor: pointer;
+  color: #fff;
 }
 
 .active {
-  color: white !important;
+  color: #fff !important;
 }
 
 @media only screen and (max-width: 600px) {
-  .info {
+  .person img {
     float: left;
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .info h1 {
+    font-size: 2rem;
+  }
+
+  .nav {
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav ul li {
+    font-size: 1.5rem;
   }
 }

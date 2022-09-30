@@ -17,25 +17,26 @@
     <title>Time tracking dashboard</title>
   </head>
   <body>
+    <h1 id="header">Time tracking dashboard</h1>
+
     <main id="main">
       <div class="left">
         <div class="person">
-          <img src="images/image-jeremy.png " alt="my photo" />
-
-          <br />
-
           <div class="info">
-            <span>Report for</span>
+            <img src="images/image-jeremy.png " alt="my photo" />
 
-            <h1>Jeremy Robson</h1>
+            <br />
+            <div>
+              <span>Report for</span>
+
+              <h1>Jeremy Robson</h1>
+            </div>
           </div>
         </div>
         <div class="nav">
-          <ul>
-            <li onclick="getData('daily')" id="daily">Daily</li>
-            <li onclick="getData('weekly')" id="weekly">Weekly</li>
-            <li onclick="getData('monthly')" id="monthly">Monthly</li>
-          </ul>
+          <h4 onclick="getData('daily')" id="daily">Daily</h4>
+          <h4 onclick="getData('weekly')" id="weekly">Weekly</h4>
+          <h4 onclick="getData('monthly')" id="monthly">Monthly</h4>
         </div>
       </div>
     </main>

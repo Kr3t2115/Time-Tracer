@@ -37,10 +37,10 @@
   cursor: pointer;
   -webkit-box-shadow: inset 0px 0px;
   box-shadow: inset 0px 0px;
-  background-color: hsla(236, 45%, 20%, 0.849);
+  background-color: #363a78;
 }
 
-.data h2 {
+.dataDivs h2 {
   color: white;
   font-weight: 500;
   font-size: 18px;
@@ -54,4 +54,32 @@
 }
 .data span {
   color: var(--pale-blue);
+}
+
+.names {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.names img {
+  height: 5px;
+}
+
+.names img:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .workData {
+    margin-top: 50px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .data h1 {
+    font-size: 48px;
+  }
 }

@@ -18,7 +18,11 @@ const getData = async (periodOfTime) => {
       datas.forEach((element) => {
         let div = document.createElement("div");
 
-        let info = document.createElement("div");
+        let data = document.createElement("div");
+
+        let names = document.createElement("div");
+
+        let workData = document.createElement("div");
 
         let h2 = document.createElement("h2");
 
@@ -54,13 +58,21 @@ const getData = async (periodOfTime) => {
 
         h2.innerText = element.title;
 
-        info.appendChild(h2);
+        names.appendChild(h2);
 
-        info.appendChild(hours);
+        names.classList.add("names");
 
-        info.appendChild(previous);
+        data.appendChild(names);
 
-        info.classList.add("data");
+        workData.classList.add("workData");
+
+        workData.appendChild(hours);
+
+        workData.appendChild(previous);
+
+        data.appendChild(workData);
+
+        data.classList.add("data");
 
         div.style.backgroundColor = element.color;
 
@@ -68,7 +80,7 @@ const getData = async (periodOfTime) => {
 
         div.classList.add("dataDivs");
 
-        div.appendChild(info);
+        div.appendChild(data);
 
         main.appendChild(div);
       });
